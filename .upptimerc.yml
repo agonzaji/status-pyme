@@ -6,7 +6,7 @@ repo: status-pyme
 
 sites:
   - name: Platform
-    url: https://pyme.platform-demo.net/api/health
+    url: https://pyme.platform-demo.net/health
     icon: https://pyme.platform-demo.net/images/logo-icon.png
     expectedStatusCodes:
       - 200
@@ -28,7 +28,7 @@ sites:
       - 200
 
   - name: API Voice
-    url: https://pyme.platform-demo.net/api/health
+    url: https://pyme.platform-demo.net/health
     expectedStatusCodes:
       - 200
 
