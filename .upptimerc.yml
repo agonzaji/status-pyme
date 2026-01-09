@@ -1,0 +1,66 @@
+# Upptime Configuration - PYME Instance
+# https://upptime.js.org/docs/configuration
+
+owner: agonzaji
+repo: status-pyme
+
+sites:
+  - name: Platform
+    url: https://pyme.platform-demo.net/api/health
+    icon: https://pyme.platform-demo.net/images/logo-icon.png
+    expectedStatusCodes:
+      - 200
+
+  - name: API SMS
+    url: https://pyme.platform-demo.net/api/benchmark/health
+    expectedStatusCodes:
+      - 200
+
+  - name: API WhatsApp
+    url: https://pyme.platform-demo.net/api/whatsapp/health
+    expectedStatusCodes:
+      - 200
+      - 401
+
+  - name: API RCS
+    url: https://pyme.platform-demo.net/api/rcs-conversation/webhook/health
+    expectedStatusCodes:
+      - 200
+
+  - name: API Voice
+    url: https://pyme.platform-demo.net/api/health
+    expectedStatusCodes:
+      - 200
+
+status-website:
+  cname: status.pyme.platform-demo.net
+  logoUrl: https://pyme.platform-demo.net/images/logo.png
+  name: MasOrange PYME Status
+  introTitle: "Platform Status"
+  introMessage: "Real-time status of MasOrange PYME services."
+  navbar:
+    - title: Platform
+      href: https://pyme.platform-demo.net
+    - title: Support
+      href: https://pyme.platform-demo.net/tickets.html
+
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
+  updateTemplate: "0 0 * * *"
+  uptime: "*/5 * * * *"
+
+commitMessages:
+  commitAuthorName: "Upptime Bot"
+  commitAuthorEmail: "upptime@masorange.es"
+
+i18n:
+  activeIncidents: "Active Incidents"
+  allSystemsOperational: "All Systems Operational"
+  incidentReport: "Incident Report"
+  pastIncidents: "Past Incidents"
+  scheduledMaintenance: "Scheduled Maintenance"
+  responseTime: "Response Time"
+  uptime: "Uptime"
