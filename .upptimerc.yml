@@ -17,7 +17,7 @@ sites:
       - 200
 
 status-website:
-  cname: status.pyme.platform-demo.net
+  # cname: status.pyme.platform-demo.net  # TODO: Enable when domain transfer completes
   logoUrl: https://pyme.platform-demo.net/images/logo.png
   name: MasOrange PYME Status
   introTitle: "Platform Status"
