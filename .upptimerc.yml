@@ -6,27 +6,27 @@ repo: status-pyme
 
 sites:
   - name: Platform
-    url: https://pyme.platform-demo.net/health
-    icon: https://pyme.platform-demo.net/images/logo-icon.png
+    url: https://osp-pyme.messaging-platform.com/health
+    icon: https://osp-pyme.messaging-platform.com/images/logo-icon.png
     expectedStatusCodes:
       - 200
 
   - name: API
-    url: https://pyme.platform-demo.net/api/benchmark/health
+    url: https://osp-pyme.messaging-platform.com/api/benchmark/health
     expectedStatusCodes:
       - 200
 
 status-website:
-  # cname: status.pyme.platform-demo.net  # TODO: Enable when domain transfer completes
-  logoUrl: https://pyme.platform-demo.net/images/logo.png
+  # cname: status.osp-pyme.messaging-platform.com  # TODO: Enable when domain transfer completes
+  logoUrl: https://osp-pyme.messaging-platform.com/images/logo.png
   name: MasOrange PYME Status
   introTitle: "Platform Status"
   introMessage: "Real-time status of MasOrange PYME services."
   navbar:
     - title: Platform
-      href: https://pyme.platform-demo.net
+      href: https://osp-pyme.messaging-platform.com
     - title: Support
-      href: https://pyme.platform-demo.net/tickets.html
+      href: https://osp-pyme.messaging-platform.com/tickets.html
 
 workflowSchedule:
   graphs: "0 0 * * *"
